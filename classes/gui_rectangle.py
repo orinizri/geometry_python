@@ -15,5 +15,4 @@ class GuiRectangle(Rectangle):
         canvas.forward(self.top_right.x - self.bottom_left.x)
         canvas.left(90)
         canvas.forward(self.top_right.y - self.bottom_left.y)
-        turtle.done()
 

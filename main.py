@@ -1,6 +1,7 @@
 from classes.point import Point
 from classes.rectangle import Rectangle
 from classes.gui_rectangle import GuiRectangle
+from classes.gui_point import GuiPoint
 from random import randint
 import turtle
 # Rectangle Points
@@ -25,8 +26,10 @@ does_fall_into_rectangle = point.falls_into_rectangle(rectangle)
 rectangle_bottom_left = Point(randint(0,100), randint(0,100))
 rectangle_top_right = Point(randint(10,100), randint(10,100))
 gui_rectangle = GuiRectangle(rectangle_bottom_left, rectangle_top_right)
+gui_point = GuiPoint(point.x, point.y)
     
 
 my_turtle = turtle.Turtle()
-
 gui_rectangle.draw(canvas=my_turtle)
+gui_point.draw(canvas=my_turtle)
+turtle.done()
