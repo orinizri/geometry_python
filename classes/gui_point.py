@@ -1,5 +1,4 @@
 from classes.point import Point
-import turtle
 
 
 class GuiPoint(Point):
